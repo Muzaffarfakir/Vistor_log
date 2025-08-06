@@ -1,0 +1,24 @@
+.profile-container {
+  display: flex;
+  justify-content: top;
+ align-items: flex-start;
+  height: auto;
+  overflow: hidden;
+}
+
+.profile-img {
+ 
+  animation: slideFromTop 1s ease-out forwards;
+  opacity: 0;
+}
+
+@keyframes slideFromTop {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
